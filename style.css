@@ -10,12 +10,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 400px)
-.container {
-    max-width: none;
-    border: none;
-    height: 100vh;
-}
+
 .container {
   max-width: 400px;
   width: 100%;
@@ -25,6 +20,13 @@ body {
   flex-direction: column;
   row-gap: 10px;
   border: 1px solid black;
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: none;
+    border: none;
+    height: 100vh;
+  }
 }
 .heading h1 {
   font-size: 29px;
